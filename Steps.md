@@ -249,7 +249,7 @@ route:
 receivers:
 - name: 'email-notifications'         # Receiver name
   email_configs:
-  - to: jaiswaladi246@gmail.com       # Email recipient
+  - to: arunkumarreddykallam@gmail.com       # Email recipient
     from: test@gmail.com              # Email sender
     smarthost: smtp.gmail.com:587     # SMTP server
     auth_username: your_email         # SMTP auth username
