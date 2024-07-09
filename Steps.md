@@ -132,7 +132,7 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-      - targets: ["3.110.195.114:9100"]  # Target node exporter endpoint
+      - targets: ["18.205.28.245:9100"]  # Target node exporter endpoint
 ```
 
 #### Blackbox Exporter
@@ -145,14 +145,14 @@ scrape_configs:
       - targets:
         - http://prometheus.io        # HTTP target
         - https://prometheus.io       # HTTPS target
-        - http://3.110.195.114:8080/  # HTTP target with port 8080
+        - http://18.205.28.245:8080/  # HTTP target with port 8080
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 13.235.248.225:9115  # Blackbox exporter address
+        replacement: 54.175.201.118:9115  # Blackbox exporter address
 ```
 
 ## Alert Rules Configuration (`alert_rules.yml`)
